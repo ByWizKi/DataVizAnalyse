@@ -1,0 +1,85 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{lmodern} % Police plus moderne et lisible
+
+% Mise en page
+\geometry{margin=2.5cm}
+\setstretch{1.2}
+
+% Style des titres
+\titleformat{\section}
+  {\large\bfseries\color{blue!70!black}}
+  {\thesection}{1em}{}
+
+\titleformat{\subsection}
+  {\normalsize\bfseries\color{blue!50!black}}
+  {\thesubsection}{1em}{}
+
+% Alinéa
+\setlength{\parindent}{15pt}
+\setlength{\parskip}{6pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Analyse d'une visualisation -- Temps d'écran}}\\[0.5cm]
+    \textbf{Thiebaud Enzo} \\
+    Numéro étudiant : \textbf{p2207446} \\[0.5cm]
+\end{center}
+
+\section*{Description des données}
+
+La visualisation provient de l'étude \textit{Esteban 2015}.
+Elle présente la durée quotidienne moyenne passée devant un écran
+(télévision, ordinateur ou console de jeux) chez les enfants âgés de 6 à 17 ans.
+Les données sont distinguées selon le sexe (garçons et filles)
+et selon le niveau de diplôme de la personne de référence du ménage.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\textwidth]{ecran1.jpg}
+    \caption{\small Durée quotidienne moyenne passée devant un écran selon le sexe et le diplôme, étude Esteban 2015.}
+\end{figure}
+
+\section*{Encodage visuel}
+
+L'encodage principal repose sur la hauteur des barres,
+qui indique le nombre moyen d'heures quotidiennes passées devant un écran.
+Les barres bleues représentent les garçons et les barres rouges les filles.
+L'axe horizontal présente les catégories de diplômes,
+tandis que les barres d'erreur montrent la variabilité des données.
+L'échelle verticale (de 0 à 6 heures) facilite la comparaison entre les groupes.
+
+\section*{Interactions}
+
+La visualisation est entièrement statique, aucune interaction n'est possible.
+Elle reste néanmoins claire et permet une lecture rapide des tendances générales.
+
+\section*{Analyse et critique}
+
+On observe que le temps d'écran diminue lorsque le niveau de diplôme du ménage augmente.
+Les garçons passent en moyenne plus de temps devant les écrans que les filles,
+quelle que soit la catégorie de diplôme.
+
+Cependant, certaines incohérences sont visibles :
+\begin{itemize}
+    \item Le titre indique que les données concernent les enfants de 6 à 17 ans,
+          mais les diplômes mentionnés (\textit{Bac+3}, \textit{Bac+4}, etc.) ne peuvent pas s'appliquer à des enfants.
+          Cela montre que le diplôme concerne en réalité les parents, ce qui n'est pas précisé clairement dans le titre.
+    \item L'absence de légende explicite pour les couleurs peut créer une légère confusion
+          pour un lecteur non averti.
+    \item Le titre du graphique pourrait être reformulé pour indiquer plus clairement qu'il s'agit
+          du lien entre le niveau d'éducation du foyer et le temps d'écran des enfants.
+\end{itemize}
+
+Malgré ces remarques, la visualisation reste efficace pour montrer la tendance générale
+et illustre bien la relation entre le niveau socio-éducatif et le temps d'écran des jeunes.
+
+\end{document}
